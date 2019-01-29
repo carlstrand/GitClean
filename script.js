@@ -6,13 +6,32 @@
 // Make sure that you set relevant params below to fit your requirements.
 
 const fetch = require('node-fetch')
-const repoList = []
+const repoList = ["android_patcher",
+"docker-aosp",
+"treble_patches",
+"vendor_descendant",
+"BKL_OREO_EMUI8",
+"chromium_patches",
+"android_development_shell_tools",
+"lineage_build_stuff",
+"android_device_lenovo_lenovotb_7304f",
+"android_device_huawei_common",
+"android_device_huawei_phone",
+"proprietary_vendor_huawei_vndk",
+"android_device_huawei_phone-kirinproject",
+"Android-Tools",
+"android_device_huawei_y360",
+"docker-lineage-cicd",
+"EnergizedMagisk",
+"android_device_huawei_y360-mtk",
+"bootable_recovery",
+"android_kernel_lenovo_a1010a20_3.18.19"]
 
 // SETUP
 
-const username = '' // Your github username
+const username = 'carlstrand' // Your github username
 const accessToken = '' // Your github access token
-const orgName = '' // The organisation name the repos should be transferred to. Create organisation manually first.
+const orgName = 'Carlstrand-ACRD' // The organisation name the repos should be transferred to. Create organisation manually first.
 const searchTerm = `` // The search term for the repos you want to transfer
 const forked = false // Set to true if you want to find only forked repos
 const option = 'transfer' // Set to either 'delete', 'private', 'public', or 'transfer'
